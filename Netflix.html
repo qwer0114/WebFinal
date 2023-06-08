@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html">Home</a>
+          <a href="Netflix.html">Netflix</a>
+          <a href="Disney.html">Diseney</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main_movie">
+        <div class="content">
+          <div class="logo"></div>
+          <div class="title"></div>
+          <div class="overview"></div>
+        </div>
+      </div>
+      <div class="movies">
+        <div class="swiper">
+          <div class="list_title">인기 영화</div>
+          <div class="swiper-wrapper movie_swiper_wrapper"></div>
+        </div>
+        <div class="swiper">
+          <div class="list_title">한국 영화</div>
+          <div class="swiper-wrapper KRmovie_swiper_wrapper"></div>
+        </div>
+        <div class="swiper">
+          <div class="list_title">인기 드라마</div>
+          <div class="swiper-wrapper drama_swiper_wrapper"></div>
+        </div>
+        <div class="swiper">
+          <div class="list_title">한국 드라마</div>
+          <div class="swiper-wrapper KRdrama_swiper_wrapper"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module" src="JS/Netflix.js"></script>
+  <script type="module" src="JS/Detail.js"></script>
+  <script src="JS/Swiper.js"></script>
+</html>

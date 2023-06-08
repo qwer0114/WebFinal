@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html">Home</a>
+          <a href="Netflix.html">Netflix</a>
+          <a href="Disney.html">Diseney</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main_movie">
+        <div class="content">
+          <div class="logo"></div>
+          <div class="title"></div>
+          <div class="overview"></div>
+        </div>
+      </div>
+      <div class="movies">
+        <div class="swiper">
+          <div class="list_title">인기 영화</div>
+          <div class="swiper-wrapper movie_swiper_wrapper"></div>
+        </div>
+        <div class="swiper">
+          <div class="list_title">평론가들의 극찬을 받은 영화</div>
+          <div class="swiper-wrapper topRate_swiper_wrapper"></div>
+        </div>
+        <div class="swiper">
+          <div class="list_title">최신 영화</div>
+          <div class="swiper-wrapper upComing_swiper_wrapper"></div>
+        </div>
+      </div>
+      <div class="modal_movie">
+        <div class="filter">
+          <div>
+            <img class="detail_poster"></img>
+          </div>
+          <div class="content_info">
+            <div class="content_title"></div>
+            <div class="tagline"></div>
+            <div>개요</div>
+            <div class="detail_overview"></div>
+          </div>
+          <button>X</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="JS/index.js"></script>
+  <script src="JS/Swiper.js"></script>
+</html>
