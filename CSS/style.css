@@ -1,5 +1,7 @@
 @import url(movie.css);
 @import url(modal.css);
+@import url(nav.css);
+@import url(genreMovie.css);
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Orbitron&display=swap");
 
 body {

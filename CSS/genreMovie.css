@@ -1,0 +1,7 @@
+.genre_movies{
+    width: 60%;
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
