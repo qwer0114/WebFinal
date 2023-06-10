@@ -30,7 +30,6 @@ const getKRmovies = async () => {
   );
   const json = await api.json();
   json.results.map((movie) => KRmovies.push(movie));
-  console.log(KRmovies);
   const swiper_wrapper = document.querySelector(".KRmovie_swiper_wrapper");
   movieSwiper(swiper_wrapper, KRmovies);
   modal();

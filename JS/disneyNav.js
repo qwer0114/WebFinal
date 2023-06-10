@@ -16,25 +16,25 @@ total.addEventListener("click", () => {
 });
 
 action.addEventListener("click", () => {
-  genreMovies(28, 8);
+  genreMovies(28, 337);
 });
 
 comedy.addEventListener("click", () => {
-  genreMovies(35, 8);
+  genreMovies(35, 337);
 });
 
 horror.addEventListener("click", () => {
-  genreMovies(27, 8);
+  genreMovies(27, 337);
 });
 
 crime.addEventListener("click", () => {
-  genreMovies(80, 8);
+  genreMovies(80, 337);
 });
 
 fantasy.addEventListener("click", () => {
-  genreMovies(14, 8);
+  genreMovies(14, 337);
 });
 
 animation.addEventListener("click", () => {
-  genreMovies(16, 8);
+  genreMovies(16, 337);
 });

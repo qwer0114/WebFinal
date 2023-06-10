@@ -10,14 +10,25 @@
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="CSS/style.css" />
+    <script src="https://kit.fontawesome.com/2bbe5c8131.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <nav>
-        <div>
-          <a href="index.html">Home</a>
-          <a href="Netflix.html">Netflix</a>
-          <a href="Disney.html">Diseney</a>
+        <div class="genres">
+          <ul>
+            <i class="fa-solid fa-chevron-left icon"></i>
+            <div  class="genre"><a href="index.html">Home</a></div>
+            <div  class="genre"> <a href="Netflix.html">Netflix</a></div>
+            <div  class="genre"><a href="Disney.html">Diseney</a></div>
+            <div class="genre" id="total"><a>모든장르</a></div>
+            <div class="genre" id="action"><a>액션</a></div>
+            <div class="genre" id="comedy"><a>코미디</a></div>
+            <div class="genre" id="horror"><a>공포</a></div>
+            <div class="genre" id="crime"><a>범죄</a></div>
+            <div class="genre" id="fantasy"><a>판타지</a></div>
+            <div class="genre" id="animation"><a>애니메이션</a></div>
+          </ul>
         </div>
       </nav>
     </header>
@@ -65,4 +76,6 @@
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="JS/Route/index.js" type="module"></script>
   <script src="JS/Modules/Swiper.js"></script>
+  <script type="module" src="JS/Modules/GenreMovie.js"></script>
+  <script src="JS/nav.js" type="module"></script>
 </html>

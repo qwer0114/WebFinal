@@ -1,4 +1,5 @@
 import { API_Key, API_URL, IMAGE_BASE_URL } from "./APIVar.js";
+
 export const getMain = async (id, title, overview) => {
   console.log(id);
   if (id === undefined) {

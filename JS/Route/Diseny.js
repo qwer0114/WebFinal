@@ -11,6 +11,7 @@ const crimeMovie = [];
 const fantasyMovie = [];
 const animationMovie = [];
 let index = Math.floor(Math.random() * 20);
+
 const getMovies = async () => {
   const api = await fetch(
     `${API_URL}discover/movie/?api_key=${API_Key}&page=1&sort_by=popularity.desc&watch_region=KR&with_watch_providers=337&language=ko-KR`
@@ -30,7 +31,6 @@ const getKRmovies = async () => {
   );
   const json = await api.json();
   json.results.map((movie) => KRmovies.push(movie));
-  console.log(KRmovies);
   const swiper_wrapper = document.querySelector(".KRmovie_swiper_wrapper");
   movieSwiper(swiper_wrapper, KRmovies);
   modal();

@@ -6,6 +6,14 @@ const modal = () => {
       movieDetail(slider.id);
     });
   }
+
+  const genresSlider = document.querySelectorAll(".slide");
+
+  for (const slider of genresSlider) {
+    slider.addEventListener("click", () => {
+      movieDetail(slider.id);
+    });
+  }
 };
 
 const movieDetail = async (id) => {

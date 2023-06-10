@@ -1,7 +1,38 @@
-.nav{
-
+.icon {
+  position: absolute;
+  font-size: 40px;
+  text-align: left;
+  top: 500px;
+  left: 0;
+  color: white;
 }
 
-.genres{
-    display: none;
+.genres {
+  position: fixed;
+  right: 0;
+  top: 2px;
+  height: 100%;
+  color: white;
+
+  z-index: 1000;
+  text-align: left;
+  transition: all 1s;
+  transform: translateX(+260px);
+  width: 300px;
+}
+
+.genres:hover {
+  transform: translateX(-10px);
+}
+
+.genre {
+  font-size: 20px;
+  padding: 30px;
+
+  text-align: center;
+}
+
+.genre:hover {
+  scale: 1.1;
+  background-color: rgba(255, 255, 255, 0.2);
 }

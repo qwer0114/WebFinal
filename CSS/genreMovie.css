@@ -1,7 +1,16 @@
-.genre_movies{
-    width: 60%;
-    display: flex;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    margin: 0 auto;
+.genre_movies {
+  width: 75%;
+
+  margin: 0 auto;
+}
+
+.genre_movie {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.slide {
+  padding: 50px;
+  text-align: center;
 }
