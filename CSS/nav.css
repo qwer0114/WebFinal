@@ -13,7 +13,6 @@
   top: 2px;
   height: 100%;
   color: white;
-
   z-index: 1000;
   text-align: left;
   transition: all 1s;
@@ -26,6 +25,7 @@
 }
 
 .genre {
+  background-color: #7b151f;
   font-size: 20px;
   padding: 30px;
 
@@ -33,6 +33,5 @@
 }
 
 .genre:hover {
-  scale: 1.1;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #520008;
 }

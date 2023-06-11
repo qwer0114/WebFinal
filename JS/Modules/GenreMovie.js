@@ -4,6 +4,7 @@ import { modal, movieDetail } from "../Modules/Modal.js";
 const moviesArray = [];
 const genre_movies = document.querySelector(".genre_movies");
 const genre_movie = document.querySelector(".genre_movie");
+
 export const genreMovies = async (id, watchProvider) => {
   const movies = document.querySelector(".movies");
   const genre_title = document.querySelector(".genre_title");
@@ -38,6 +39,7 @@ export const genreMovies = async (id, watchProvider) => {
   }
 
   moviesArray.map((movie) => {
+    let movieContainer = document.createElement("div");
     let slide = document.createElement("div"); // slide 한개
     let poster = document.createElement("img"); // 영화 포스터
     let title = document.createElement("div"); // 영화 제목
@@ -45,12 +47,13 @@ export const genreMovies = async (id, watchProvider) => {
     slide.appendChild(title); // sldie 안에 제목 삽입
     genre_movie.appendChild(slide); // slide Wrapper에 slide 삽입
 
-    title.innerHTML = movie.title ? movie.title : movie.name;
+    title.innerHTML = movie.title;
 
     poster.setAttribute("src", `${IMAGE_BASE_URL}${movie.poster_path}`);
     poster.setAttribute("class", "poster");
     slide.setAttribute("class", "slide");
     slide.setAttribute("id", `${movie.id}`);
   });
+
   modal();
 };
